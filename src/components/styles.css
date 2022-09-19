@@ -1,0 +1,294 @@
+:root {
+  --bg-color: #e98074;
+  --nav-bg-color: #e98074;
+  --text-color: #000000;
+  --navtext-color: #ffffff;
+  --page-color: #ffffff;
+  --hello: #8e8d8a;
+  --description: #e85a4f;
+  --name: #e98074;
+  --navname: #c3073f;
+  --border-width: 1px;
+  --skillback: #cccccc;
+  --skilltext: #666666;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1d;
+  --nav-bg-color: #c3073f;
+  --text-color: #ffffff;
+  --navtext-color: #ffffff;
+  --page-color: #1a1a1f;
+  --description: #eae7dc;
+  --hello: #ffffff;
+  --name: #c3073f;
+  --navname: #c3073f;
+  --border-width: 2px;
+  --skillback: white;
+  --skilltext: white;
+}
+
+.App {
+  background-color: var(--page-color);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.navbar .navname {
+  font-size: x-large;
+  margin-left: 20px;
+  color: var(--navtext-color-color);
+  font-family: "Lucida Calligraphy";
+  font-weight: 500;
+}
+.navbar .navname:visited {
+  color: var(--navtext-color);
+}
+.navbar .navname:hover {
+  color: var(--navname);
+}
+
+.navbar .mr-auto .link {
+  margin-left: 20px;
+  font-size: large;
+  color: var(--navtext-color);
+  font-family: "Lucida Calligraphy";
+}
+.navbar .mr-auto .link:visited {
+  color: var(--navtext-color);
+}
+.navbar .mr-auto .link:hover {
+  color: var(--navname);
+}
+
+.dark {
+  color: #8e8d8a;
+  size: 40px;
+}
+
+.navbar {
+  background-color: var(--nav-bg-color);
+  color: var(--navtext-color);
+  padding: 15px;
+}
+.text {
+  color: var(--text-color);
+}
+.hello-img {
+  margin-top: 10px;
+  max-height: 250px;
+}
+.display-3 {
+  color: var(--hello);
+}
+
+.lead {
+  color: var(--description);
+  font-size: xx-large;
+  font-weight: 300;
+  font-family: "Lucida Calligraphy";
+}
+code {
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--name);
+}
+.hello {
+  margin-top: 80px;
+}
+.nbcard {
+  background-color: transparent;
+  color: var(--text-color);
+  padding: 10px;
+  border: none;
+}
+.a {
+  padding-left: 18px;
+  padding-right: 10px;
+}
+.about-h {
+  font-size: x-medium;
+}
+.connect-img {
+  padding-bottom: 9px;
+}
+strong,
+.with {
+  color: var(--name);
+}
+.skill-h {
+  margin-top: 15px;
+  font-size: 35px;
+  font-family: "Lucida Calligraphy";
+}
+.skills-img {
+  margin-left: 15px;
+  margin-top: 80px;
+  height: 150px;
+  width: auto;
+}
+.skills-btn {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  border-width: var(--border-width);
+}
+.skills-btn {
+  color: #8e8d8a;
+}
+.skill-txt {
+  font-weight: bold;
+  font-size: 30px;
+  vertical-align: middle;
+}
+.skill-nbcard {
+  color: #ffffff;
+  margin-top: 10px;
+  background-color: var(--name);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+}
+.skill-nbcard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+.exp {
+  border-width: 1.8px;
+  border-color: var(--name);
+  border-radius: 5%;
+  background-color: transparent;
+  width: auto;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  color: var(--text-color);
+  font-family: "Lucida Calligraphy";
+  font-size: 14px;
+}
+
+.flip-card-inner {
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card-image-top {
+  border: 1px;
+  border-color: var(--name);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  text-align: left;
+  font-family: "Lucida Calligraphy";
+  margin: 20px;
+}
+
+.sbtn {
+  margin-top: 20px;
+}
+
+.ph {
+  background-color: transparent;
+  border-width: 1px;
+  border-color: var(--text-color);
+  color: var(--hello);
+}
+
+.contact-img {
+  height: 150px;
+  width: auto;
+  margin-left: 35px;
+}
+.contact-text {
+  color: var(--text-color);
+  font-family: "Lucida Calligraphy";
+}
+.footer-text {
+  text-align: center;
+  color: var(--text-color);
+  margin-top: 100px;
+  font-family: "Lucida Calligraphy";
+}
+
+.skills-detail .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.skills-detail .progress .skill-detail {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--skilltext);
+}
+.skills-detail .progress .skill-detail .val {
+  float: right;
+  font-style: normal;
+}
+.skills-detail .progress-bar-wrap {
+  background: var(--skillback);
+}
+.skills-detail .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: var(--name);
+}
+
+.services .services-items {
+  overflow: hidden;
+  color: var(--text-color);
+}
+
+.services .services-items:first-child {
+  border-bottom: 1px solid #eee;
+}
+
+.services-items .bord {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.services-items .item span {
+  font-size: 40px;
+  color: #c49b66;
+}
+
+.services-items .item h5 {
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-heading h4 {
+  font-weight: 100;
+}
